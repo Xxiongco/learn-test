@@ -1,0 +1,1 @@
+用于学习springboot与redis的使用，主要测试怎么对redis进行监听。
