@@ -22,11 +22,24 @@ public class MyImportSelector implements ImportSelector {
         }
         System.out.println("*****************************");
         AnnotationAttributes annotationAttributes = AnnotationAttributes.fromMap(importingClassMetadata.getAnnotationAttributes(Hello.class.getName(), true));
+        System.out.println(annotationAttributes.isEmpty());
         Iterator<Map.Entry<String, Object>> iterator1 = annotationAttributes.entrySet().iterator();
         while (iterator1.hasNext()){
             Map.Entry<String, Object> next = iterator1.next();
             System.out.println(next.getKey() + " : " + next.getValue());
         }
         return new String[0];
+
+        /**
+         com.panda.learn_spring_boot.LearnSpringBootApplication
+         demo
+         org.springframework.boot.autoconfigure.SpringBootApplication
+         com.panda.learn_spring_boot.testImportSelector.config.Hello
+         false
+         className:[Ljava.lang.String;@41488b16
+         name:test
+         *****************************
+         true
+         */
     }
 }

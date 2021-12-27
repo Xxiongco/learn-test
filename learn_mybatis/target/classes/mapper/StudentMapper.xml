@@ -6,4 +6,14 @@
     <select id="queryAll" resultType="com.panda.domain.Student">
         select * from student
     </select>
+
+    <select id="queryById" resultType="com.panda.domain.Student">
+        select * from student
+        <where>
+            name = "hong"
+            <if test="studentId != null">
+                AND id = #{studentId}
+            </if>
+        </where>
+    </select>
 </mapper>

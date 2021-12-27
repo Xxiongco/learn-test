@@ -36,6 +36,8 @@ public class RedisController {
         ValueOperations valueOperations = redisTemplate.opsForValue();
 
         valueOperations.set(key,user);
+
+        redisTemplate.execute()；
     }
 
 }

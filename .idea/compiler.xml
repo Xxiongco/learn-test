@@ -10,6 +10,7 @@
         <module name="learn_redis" />
         <module name="learn_spring_boot" />
         <module name="learn_stream" />
+        <module name="learn_parse_xml_DOM" />
         <module name="learn_Async" />
         <module name="learn_mybatis" />
         <module name="learn_sheduler" />

@@ -8,5 +8,6 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
         System.out.println(importingClassMetadata.getClassName());
+        // com.panda.learn_spring_boot.LearnSpringBootApplication
     }
 }

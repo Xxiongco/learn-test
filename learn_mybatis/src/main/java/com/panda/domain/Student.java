@@ -7,8 +7,15 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-public class Student {
+public class Student extends Person{
     private Integer id;
-    private String name;
     private String num;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", num='" + num + '\'' + super.toString() +
+                '}';
+    }
 }

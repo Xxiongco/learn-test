@@ -7,6 +7,8 @@
 ">
 
     <bean id="student" class="com.panda.domain.Student"/>
+    <bean id="student1" class="com.panda.domain.Student"/>
+    <bean id="teacher" class="com.panda.domain.Student"/>
 
 
 </beans>

@@ -19,8 +19,10 @@ public class LearnMybatisMain {
         SqlSession session = sqlSessionFactory.openSession();
         try {
             StudentMapper mapper = session.getMapper(StudentMapper.class);
+            Student student = mapper.queryById(null);
+            System.out.println(student);
             List<Student> students = mapper.queryAll();
-            students.forEach(student -> System.out.println(student));
+            students.forEach(item -> System.out.println(item));
         } finally {
             session.close();
         }
