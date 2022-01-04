@@ -7,15 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="learn_reflect" />
         <module name="learn_redis" />
         <module name="learn_spring_boot" />
+        <module name="learn_sheduler" />
+        <module name="learn_spring" />
+        <module name="learn_JDBC" />
+        <module name="learn_agent" />
+        <module name="learn_validate" />
         <module name="learn_stream" />
         <module name="learn_parse_xml_DOM" />
         <module name="learn_Async" />
         <module name="learn_mybatis" />
-        <module name="learn_sheduler" />
         <module name="base" />
-        <module name="learn_spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +34,7 @@
       <module name="learn_sheduler" options="-parameters" />
       <module name="learn_spring_boot" options="-parameters" />
       <module name="learn_stream" options="-parameters" />
+      <module name="learn_validate" options="-parameters" />
     </option>
   </component>
 </project>

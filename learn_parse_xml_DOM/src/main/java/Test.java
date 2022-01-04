@@ -12,11 +12,24 @@ public class Test {
     public static String NUM = "num";
     public static void main(String[] args) throws Exception {
         //test1();
-        test2();
+        //test2();
+        test3();
+
+
     }
 
-    public static void test3(){
-        
+    public static void test3() throws Exception{
+        Document document = getDocument();
+        Element documentElement = document.getDocumentElement();
+        // person
+        System.out.println(documentElement.getNodeName());
+
+        NodeList childNodes = documentElement.getChildNodes();
+        for (int i = 0; i < childNodes.getLength(); i++) {
+            Node item = childNodes.item(i);
+            System.out.println(item.getNodeName());
+        }
+
     }
 
     public static void test2() throws Exception{

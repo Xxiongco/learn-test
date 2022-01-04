@@ -14,7 +14,6 @@ public class LearnBaseMain {
         Person teacher = personFactory.getPerson("teacher");
         teacher.say();
 
-        Teacher.class.newInstance()
 
     }
 }

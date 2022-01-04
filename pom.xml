@@ -14,6 +14,10 @@
         <module>base</module>
         <module>learn_spring</module>
         <module>learn_parse_xml_DOM</module>
+        <module>learn_JDBC</module>
+        <module>learn_validate</module>
+        <module>learn_reflect</module>
+        <module>learn_agent</module>
     </modules>
 
     <properties>
