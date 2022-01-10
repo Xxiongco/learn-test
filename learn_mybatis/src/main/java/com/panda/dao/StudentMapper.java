@@ -9,4 +9,6 @@ public interface StudentMapper {
     List<Student> queryAll();
 
     Student queryById(@Param("studentId") Long id);
+
+    List<Student> testSelect(Student student);
 }

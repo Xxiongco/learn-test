@@ -10,6 +10,7 @@ import lombok.Setter;
 public class Student extends Person{
     private Integer id;
     private String num;
+    private String type;
 
     @Override
     public String toString() {

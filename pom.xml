@@ -17,7 +17,7 @@
         <module>learn_JDBC</module>
         <module>learn_validate</module>
         <module>learn_reflect</module>
-        <module>learn_agent</module>
+        <module>learn_agent_inceptor</module>
     </modules>
 
     <properties>

@@ -16,4 +16,25 @@
             </if>
         </where>
     </select>
+
+    <select id="testSelect" resultType="com.panda.domain.Student">
+<!--        <trim prefix="SELECT" suffix="FROM student" prefixOverrides="," suffixOverrides=",">-->
+<!--            id,-->
+<!--            <choose>-->
+<!--                <when test="type != null and type == 'student'">-->
+<!--                    num,name-->
+<!--                </when>-->
+<!--                <otherwise>-->
+<!--                    name-->
+<!--                </otherwise>-->
+<!--            </choose>-->
+<!--        </trim>-->
+
+        SELECT
+        <if test="type != null and type == 'student'">
+            num,
+        </if>
+        id,name
+        FROM student
+    </select>
 </mapper>
