@@ -6,9 +6,11 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd
 ">
 
-    <bean id="student" class="com.panda.domain.Student"/>
-    <bean id="student1" class="com.panda.domain.Student"/>
-    <bean id="teacher" class="com.panda.domain.Student"/>
+    <bean id="myFactoryBean" class="com.panda.factoryBean.MyFactoryBean"/>
+<!--    <bean id="student" class="com.panda.domain.Student"/>-->
+<!--    <bean id="student1" class="com.panda.domain.Student"/>-->
+<!--    <bean id="teacher" class="com.panda.domain.Student"/>-->
+<!--    <bean id="myBeanFactoryPostProcessor" class="com.panda.beanFactoryPostProcessor.MyBeanFactoryPostProcessor"/>-->
 
 
 </beans>

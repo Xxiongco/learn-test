@@ -12,11 +12,16 @@ public class Student extends Person{
     private String num;
     private String type;
 
+    private Integer count;
+
     @Override
     public String toString() {
         return "Student{" +
                 "id=" + id +
-                ", num='" + num + '\'' + super.toString() +
+                ", num='" + num + '\'' +
+                ", type='" + type + '\'' +
+                ", count=" + count + '\'' + ", "+
+                super.toString() +
                 '}';
     }
 }

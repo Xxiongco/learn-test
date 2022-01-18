@@ -19,8 +19,8 @@ public class LearnMybatisMain {
     public static String TYPE = "student";
 
     public static void main(String[] args) throws Exception {
-        //learnMybatis();
-        testWithInterceptor();
+        learnMybatis();
+        //testWithInterceptor();
     }
 
     public static void testWithInterceptor() throws Exception{

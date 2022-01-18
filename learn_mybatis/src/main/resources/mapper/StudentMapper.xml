@@ -4,8 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.panda.dao.StudentMapper">
     <select id="queryAll" resultType="com.panda.domain.Student">
-        select * from student
+        select s.*,(select count(*) from student tem where id = 100) count
+        from student s
     </select>
+
+
 
     <select id="queryById" resultType="com.panda.domain.Student">
         select * from student
