@@ -1,15 +1,43 @@
 package test;
 
 import java.util.Objects;
+import java.util.Random;
 
 public class TestMain {
-    public static void main(String[] args) {
-        Integer a = new Integer(200);
-        Integer b = new Integer(200);
+    public static void main(String[] args) throws InterruptedException {
 
-        System.out.println(a.equals(b));
+        //-----------------------------------------------------
+        Random random = new Random();
+        while (true){
+            System.out.println(random.nextBoolean());
+            Thread.sleep(1000L);
+        }
 
-        System.out.println(Objects.equals(a, b));
+
+
+        // -----------------------------------------------------
+//        Integer a = new Integer(200);
+//        Integer b = new Integer(200);
+//
+//        System.out.println(a.equals(b));
+//
+//        System.out.println(Objects.equals(a, b));
+// ---------------------------------------------------------------------
+//        Student a = new Student();
+//        Student b = new Student(1,"padna","2017");
+//
+//        System.out.println(a);
+//        test(a,b);
+//        System.out.println(a);
+
+        // --------------------------------------------------
 
     }
+
+    public static void test(Student a , Student b){
+        a.setId(b.getId());
+        a.setName(b.getName());
+        a.setNum(b.getNum());
+    }
+
 }

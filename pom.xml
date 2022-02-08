@@ -18,6 +18,10 @@
         <module>learn_validate</module>
         <module>learn_reflect</module>
         <module>learn_agent_inceptor</module>
+        <module>learn_rabbitmq_consumer</module>
+        <module>learn_spring_boot_selector_registrar</module>
+        <module>learn_thread_pool</module>
+        <module>learn_jedis</module>
     </modules>
 
     <properties>

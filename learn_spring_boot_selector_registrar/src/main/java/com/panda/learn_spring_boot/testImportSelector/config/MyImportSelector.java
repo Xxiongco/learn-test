@@ -10,6 +10,20 @@ import java.util.Map;
 public class MyImportSelector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
+
+        System.out.println('\n');
+        System.out.println("---------------------- in MyImportSelector ------------------");
+        System.out.println(importingClassMetadata.getClassName());
+
+
+        System.out.println("---------------------- in MyImportSelector ------------------");
+        System.out.println('\n');
+
+        // return  testOne(importingClassMetadata);
+        return new String[0];
+    }
+
+    public String[] testOne(AnnotationMetadata importingClassMetadata){
         System.out.println(importingClassMetadata.getClassName());
         System.out.println("demo");
         importingClassMetadata.getAnnotationTypes().forEach(item -> System.out.println(item));

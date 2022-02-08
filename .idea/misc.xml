@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/learn_stream/pom.xml" />
         <option value="$PROJECT_DIR$/learn_validate/pom.xml" />
         <option value="$PROJECT_DIR$/learn_lua/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_spring_boot_redis/pom.xml" />
       </list>
     </option>
   </component>
