@@ -16,6 +16,9 @@ import org.springframework.util.CollectionUtils;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 用于学习redis使用延迟队列
+ */
 @Service
 public class RedisDelayService  implements ApplicationContextAware {
 

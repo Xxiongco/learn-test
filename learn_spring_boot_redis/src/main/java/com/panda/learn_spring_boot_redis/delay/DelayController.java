@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.LocalDateTime;
 import java.util.Random;
 
+/**
+ * 用于学习redis使用延迟队列
+ */
 @RestController
 @RequestMapping("/delay")
 public class DelayController {

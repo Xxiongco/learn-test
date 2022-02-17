@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/learn_Async/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn_activiti/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/learn_lua/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/learn_rabbitmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/learn_rabbitmq_consumer/src/main/java" charset="UTF-8" />

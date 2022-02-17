@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/learn_rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/learn_springboot/pom.xml" />
         <option value="$PROJECT_DIR$/learn_spring_boot_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_activiti/pom.xml" />
       </list>
     </option>
   </component>

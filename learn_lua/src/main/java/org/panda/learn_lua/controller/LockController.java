@@ -24,7 +24,6 @@ public class LockController {
 
     @GetMapping("/lua")
     public ResponseEntity lua() {
-        //List<String> keys = Arrays.asList("one", "two");
 
         DefaultRedisScript<Void> redisScript = new DefaultRedisScript<>();
         redisScript.setScriptSource(new ResourceScriptSource(new ClassPathResource("lua/test.lua")));
@@ -42,12 +41,14 @@ public class LockController {
         list.add(student3);
         list.add(student4);
 
+        List<Map<String, Object>> mapList = new ArrayList<>();
+        for (Student student : list) {
+            mapList.add(student.buildHashValue());
+        }
 
 
-        List<String> keys = list.stream().map(student -> student.getId().toString()).collect(Collectors.toList());
-
-        stringRedisTemplate.execute(redisScript, Collections.emptyList(),
-                JSON.toJSONString(student1),JSON.toJSONString(student2),JSON.toJSONString(student3),JSON.toJSONString(student4));
+        stringRedisTemplate.execute(redisScript, Collections.emptyList(), JSON.toJSONString(mapList));
+        System.out.println("yes");
 
         return ResponseEntity.ok(null);
     }

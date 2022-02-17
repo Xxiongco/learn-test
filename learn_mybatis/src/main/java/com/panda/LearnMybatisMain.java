@@ -20,6 +20,7 @@ public class LearnMybatisMain {
 
     public static void main(String[] args) throws Exception {
         learnMybatis();
+        // 为mybatis添加拦截器的测试
         //testWithInterceptor();
     }
 

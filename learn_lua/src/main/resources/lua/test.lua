@@ -9,17 +9,22 @@
 --local numValue = ARGV[2];
 
 local s1 = ARGV[1];
-local s2 = ARGV[2];
-local s3 = ARGV[3];
-local s4 = ARGV[4];
-
+local s2 = cjson.decode(ARGV[1]);
 
 
 --redis.call('set',idKey,idValue);
 --
 --redis.call('set',numKey,numValue);
 
-redis.call('set',cjson.decode(s1)['id'],s1);
-redis.call('set',cjson.decode(s2)['id'],s2);
-redis.call('set',cjson.decode(s3)['id'],s3);
-redis.call('set',cjson.decode(s4)['id'],s4);
+local temKey = "student:".."list"
+local josnKey = "josnKey:".."josn"
+
+redis.call('hset',temKey,"list",s1)
+
+
+for i, map in ipairs(s2) do
+    for key, value in pairs(map) do
+        local tem = i..key
+        redis.call('hset',josnKey,tem,value);
+    end
+end

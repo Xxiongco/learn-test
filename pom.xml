@@ -22,6 +22,7 @@
         <module>learn_spring_boot_selector_registrar</module>
         <module>learn_thread_pool</module>
         <module>learn_jedis</module>
+        <module>learn_activiti</module>
     </modules>
 
     <properties>

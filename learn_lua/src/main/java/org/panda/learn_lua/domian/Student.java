@@ -3,6 +3,9 @@ package org.panda.learn_lua.domian;
 
 import lombok.Data;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Data
 public class Student{
 
@@ -19,4 +22,16 @@ public class Student{
         this.name = name;
         NUM ++;
     }
+
+    public Map<String,Object> buildHashValue(){
+        HashMap<String, Object> map = new HashMap<>();
+
+        map.put("id",this.getId());
+        map.put("num",this.getNum());
+        map.put("name",this.getName());
+
+        return map;
+
+    }
+
 }
