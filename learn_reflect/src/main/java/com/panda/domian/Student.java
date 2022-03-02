@@ -1,5 +1,6 @@
 package com.panda.domian;
 
+import com.panda.config.Panda;
 import lombok.Data;
 
 import javax.validation.constraints.NotNull;

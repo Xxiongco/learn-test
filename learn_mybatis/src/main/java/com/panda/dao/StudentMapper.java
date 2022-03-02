@@ -4,6 +4,7 @@ import com.panda.domain.Student;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Set;
 
 public interface StudentMapper {
     List<Student> queryAll();
@@ -11,4 +12,8 @@ public interface StudentMapper {
     Student queryById(@Param("studentId") Long id);
 
     List<Student> testSelect(Student student);
+
+    List<Student> selectByTwoCondiction(Integer id , String num, Student student);
+
+    List<Student> testStringToLongInMybatis(Student student);
 }

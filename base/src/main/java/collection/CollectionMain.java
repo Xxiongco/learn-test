@@ -24,12 +24,13 @@ public class CollectionMain {
         b.add(3);
         b.add(4);
         b.add(5);
-        b.add(6);
-        b.add(7);
-        b.add(8);
 
         List<Integer> collect = a.stream().filter(b::contains).collect(Collectors.toList());
         System.out.println(collect);
 
+
     }
+
+
+
 }
