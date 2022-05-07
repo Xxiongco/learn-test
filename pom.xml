@@ -23,6 +23,8 @@
         <module>learn_thread_pool</module>
         <module>learn_jedis</module>
         <module>learn_activiti</module>
+        <module>learn_spring_springMVC</module>
+        <module>learn_spring_boot_2</module>
     </modules>
 
     <properties>

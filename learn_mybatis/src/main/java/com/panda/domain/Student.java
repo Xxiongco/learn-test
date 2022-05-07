@@ -14,6 +14,8 @@ public class Student extends Person{
     private String num;
     private String type;
 
+    private boolean flag;
+
     private Set<String> ids;
 
     private Integer count;

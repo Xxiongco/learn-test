@@ -16,4 +16,6 @@ public interface StudentMapper {
     List<Student> selectByTwoCondiction(Integer id , String num, Student student);
 
     List<Student> testStringToLongInMybatis(Student student);
+
+    Integer updateStudent(Student student);
 }

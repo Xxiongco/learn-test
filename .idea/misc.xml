@@ -12,12 +12,13 @@
         <option value="$PROJECT_DIR$/learn_spring_boot/pom.xml" />
         <option value="$PROJECT_DIR$/learn_sheduler/pom.xml" />
         <option value="$PROJECT_DIR$/learn_Async/pom.xml" />
-        <option value="$PROJECT_DIR$/learn_stream/pom.xml" />
         <option value="$PROJECT_DIR$/learn_validate/pom.xml" />
         <option value="$PROJECT_DIR$/learn_lua/pom.xml" />
         <option value="$PROJECT_DIR$/learn_rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/learn_spring_boot_redis/pom.xml" />
         <option value="$PROJECT_DIR$/learn_activiti/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_spring_stream/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_spring_boot_2/pom.xml" />
       </list>
     </option>
   </component>

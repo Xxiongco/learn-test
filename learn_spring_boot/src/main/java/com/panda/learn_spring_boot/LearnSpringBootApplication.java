@@ -2,6 +2,7 @@ package com.panda.learn_spring_boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  *
@@ -15,6 +16,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
+//@ComponentScan(basePackages = "com.panda.learn_spring_boot.listener")
+//@ComponentScan(basePackages = "com.panda.learn_spring_boot.aop")
+@ComponentScan(basePackages = "com.panda.learn_spring_boot.stream")
 public class LearnSpringBootApplication {
 
     public static void main(String[] args) {

@@ -24,10 +24,66 @@ public class LearnMybatisMain {
         //learnMybatis();
         // 为mybatis添加拦截器的测试
         //testWithInterceptor();
-
         //testMultipleParam();
-        testStringToLongInMybatis();
+        //testStringToLongInMybatis();
+        //test();
+        //test7();
+        test8();
 
+    }
+
+    /**
+     *  测试flag
+     */
+    public static void test8() {
+        Student student = new Student();
+        student.setId(1);
+        student.setName("hong");
+        student.setNum("20172110");
+        student.setFlag(true);
+        SqlSession sqlSession = getSqlSession();
+        StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
+        List<Student> students = mapper.testSelect(student);
+        System.out.println(students);
+
+    }
+
+    /**
+     *  用于测试 if 中有if 结论是，if中有If是可以的
+     */
+    public static void test7() {
+        Student student = new Student();
+        student.setId(1);
+        student.setName("hong");
+        student.setNum("20172110");
+
+        SqlSession sqlSession = getSqlSession();
+
+        StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
+
+        List<Student> students = mapper.testSelect(student);
+
+        System.out.println(students);
+
+    }
+
+    /**
+     *  用于学习声明式事务和编程式事务
+     */
+    public static void test() {
+
+        Student student = new Student();
+        student.setId(1);
+        student.setName("pandapanda");
+        student.setNum("panda");
+
+        SqlSession sqlSession = getSqlSession();
+        StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
+        Integer integer = mapper.updateStudent(student);
+        System.out.println(integer);
+
+        sqlSession.commit(true);
+        sqlSession.close();
 
     }
 
@@ -122,7 +178,8 @@ public class LearnMybatisMain {
             System.out.println(student);
             List<Student> students = mapper.queryAll();
             students.forEach(item -> System.out.println(item));
-        } finally {
+        }
+        finally {
             session.close();
         }
     }

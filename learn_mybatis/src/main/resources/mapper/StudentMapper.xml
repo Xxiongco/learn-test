@@ -35,12 +35,32 @@
 <!--            </choose>-->
 <!--        </trim>-->
 
-        SELECT
-        <if test="type != null and type == 'student'">
-            num,
-        </if>
-        id,name
-        FROM student
+<!--        SELECT-->
+<!--        <if test="type != null and type == 'student'">-->
+<!--            num,-->
+<!--        </if>-->
+<!--        id,name-->
+<!--        FROM student-->
+
+<!--        select * from student
+        <where>
+            <if test="num != null or name != null">
+                <if test="num != null">
+                    AND num = #{num}
+                </if>
+                <if test="name != null">
+                    AND name = #{name}
+                </if>
+            </if>
+        </where>
+
+        -->
+        select * from student
+        <where>
+            <if test="flag == true">
+                id = 1
+            </if>
+        </where>
     </select>
 
     <select id="selectByTwoCondiction" resultType="com.panda.domain.Student">
@@ -95,4 +115,21 @@
             </choose>
         </where>
     </select>
+
+    <update id="updateStudent">
+        update student
+            <set>
+                <if test="num != null">
+                    num = #{num},
+                </if>
+                <if test="name != null">
+                    name = #{name}
+                </if>
+            </set>
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+        </where>
+    </update>
 </mapper>
