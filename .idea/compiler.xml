@@ -21,6 +21,7 @@
         <module name="learn_activiti" />
         <module name="learn_spring_boot_redis" />
         <module name="learn_spring_boot_selector_registrar" />
+        <module name="learn_spring_stream-2" />
         <module name="learn_validate" />
         <module name="learn_spring_springMVC" />
         <module name="learn_parse_xml_DOM" />
@@ -31,9 +32,6 @@
         <module name="learn_spring_stream" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="learn_spring_boot2" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="DEPRECATION" value="false" />
@@ -47,11 +45,11 @@
       <module name="learn_rabbitmq_consumer" options="-parameters" />
       <module name="learn_sheduler" options="-parameters" />
       <module name="learn_spring_boot" options="-parameters" />
-      <module name="learn_spring_boot2" options="-parameters" />
       <module name="learn_spring_boot_2" options="-parameters" />
       <module name="learn_spring_boot_redis" options="-parameters" />
       <module name="learn_spring_boot_selector_registrar" options="-parameters" />
       <module name="learn_spring_stream" options="-parameters" />
+      <module name="learn_spring_stream-2" options="-parameters" />
       <module name="learn_validate" options="-parameters" />
     </option>
   </component>

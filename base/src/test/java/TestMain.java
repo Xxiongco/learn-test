@@ -221,4 +221,19 @@ public class TestMain {
         return cats;
     }
 
+    @Test
+    public void testgg() {
+        int a = 1;
+        int b = 2;
+
+        int c = (2*a + 2*b - 1) / 2;
+        int d = a + b - 1;
+
+       System.out.println(c);
+       System.out.println(d);
+
+    }
+
+
+
 }

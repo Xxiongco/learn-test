@@ -25,6 +25,7 @@
         <module>learn_activiti</module>
         <module>learn_spring_springMVC</module>
         <module>learn_spring_boot_2</module>
+        <module>learn_spring_stream-2</module>
     </modules>
 
     <properties>
